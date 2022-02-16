@@ -37,7 +37,7 @@ void merge(int arr[], int l, int m, int r) {
 		j++;
 		k++;
 	}
-}
+} 
 
 void mergeSort(int arr[], int l, int r) {
 	if (l < r) {
