@@ -27,7 +27,7 @@ void merge(int arr[], int l, int m, int r) {
 		}
 		k++;
 	}
-	while(i < n1) { 
+	while(i < n1) {
 		arr[k] = L[i];
 		i++;
 		k++;
