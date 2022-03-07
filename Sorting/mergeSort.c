@@ -21,7 +21,8 @@ void merge(int arr[], int l, int m, int r) {
 		if(L[i] <= R[j]) {
 			arr[k] = L[i];
 				i++;
-		} else {
+		} 
+		else {
 			arr[k] = R[j];
 			j++;
 		}
