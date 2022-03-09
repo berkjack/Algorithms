@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-void binarySearch(int arr[], int number, int first, int size) {
-	int middle = first + (size-first) / 2;
+void binarySearch(int arr[], int element, int first, int last) {
+	int middle = first + (last-first) / 2;
 	
-	if (number < arr[middle] && middle != first) {
-		binarySearch(arr, number, first, middle-1);
+	if (element < arr[middle] && middle != first) {
+		binarySearch(arr, element, first, middle-1);
 	}
-	else if (number > arr[middle] && middle != size) {
-		binarySearch(arr, number, middle+1, size);
+	else if (element > arr[middle] && middle != last) {
+		binarySearch(arr, element, middle+1, last);
 	}
-	else if (number == arr[middle]) {
-		printf("Dizinin %d. elemani", middle+1);
+	else if (element == arr[middle]) {
+		printf("%d is at index of %d", element, middle);
 	}
 	else {
-		printf("Dizide boyle bir sayi bulunamadi!");
+		printf("There is no such element in this array");
 	}
 }
